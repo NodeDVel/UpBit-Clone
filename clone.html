@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>업비트</title>
+  <link rel="stylesheet" href="./clone.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+  <div id="Layout">
+    <div id="TopBar">
+      <h2>UpBit</h2>
+      <div id="TopLeftLayout">
+        <li>거래소</li>
+        <li>입출금</li>
+        <li>투자내역</li>
+        <li>코인동향</li>
+        <li>고객센터</li>
+      </div>
+      <div id="TopRightLayout">
+        <li>로그인</li>
+        <li>회원가입</li>
+        <img src="./a.png" width="20px">
+        <img src="./b.png" width="40px">
+      </div>
+    </div>
+    <!--  -->
+    <div id="MainContainerBox">
+      <i id="backgroundImg_1"><img src="https://cdn.upbit.com/images/ico03.36ed425.png" width="58px" height="70px"></i>
+      <i id="backgroundImg_2"><img src="https://cdn.upbit.com/images/ico01.79ca9db.png" width="58px" height="70px"></i>
+      <i id="backgroundImg_3"><img src="https://cdn.upbit.com/images/ico02.a174ad8.png" width="58px" height="70px"></i>
+      <i id="backgroundImg_4"><img src="https://cdn.upbit.com/images/ico04.696105f.png" width="58px" height="70px"></i>
+      <h1>가장 신뢰받는 글로벌 표준 디지털 자산 거래소</h1>
+      <span>안전하고 투명한 시스템으로 빠르고 편리한 거래 환경을 제공합니다.</span>
+      <div id="MainViewInfo">
+        <li style="margin-right: 2%;">
+          <p class="InfoNumber">175</p>
+          <p class="InfoString">Coins</p>
+        </li>
+        <div style="border-left: 1px solid rgba(9,54,135,.2); height: 50px;"></div>
+        <li style="margin-left: 2%;">
+          <p class="InfoNumber">272</p>
+          <p class="InfoString">Market</p>
+        </li>
+      </div>
+      <div id="BoxLayout">
+        <span id="BoxTextLayout">거래소 둘러보기</span>
+        <span id="BoxLoginLayout">로그인</span>
+      </div>
+    </div>
+    <!--  -->
+    <div id="AdvertisingContainerBox">
+      <img src="./c.png" width="100%">
+    </div>
+    <!--  -->
+    <div id="CoinContainerBox">
+      <div id="CoinLayout_1">
+        <div id="TopCoinText">
+          <h1>UBMI</h1>
+          <h1 style="color: #0051c7;">2,158.61</h1>
+        </div>
+        <div id="BottomCoinText">
+          <span style="color: #666;">Upbit Market Index</span>
+          <span style="color: #0051c7;">▼108 -4.77%</span>
+        </div>
+        <div class="canvasLayout">
+          <canvas id="canvas_1" width="400px" height="200px"></canvas>
+        </div>
+        <p style="font-size: 10px;">
+          <img src="./f.png" width="13px">
+          당일
+          <img src="./g.png" width="13px" style="padding-left: 5%;">
+          전일
+        </p>
+      </div>
+      <div id="CoinLayout_2">
+        <div id="TopCoinText_2">
+          <h1>UBAI</h1>
+          <h1 style="color: #0051c7;">1,158.61</h1>
+        </div>
+        <div id="BottomCoinText_2">
+          <span style="color: #666;">Upbit Altcoin Index</span>
+          <span style="color: #0051c7;">▼190 -6.77%</span>
+        </div>
+        <div class="canvasLayout">
+          <canvas id="canvas_2" width="400px" height="200px"></canvas>
+        </div>
+        <p style="font-size: 10px;">
+          <img src="./f.png" width="13px">
+          당일
+          <img src="./g.png" width="13px" style="padding-left: 5%;">
+          전일
+        </p>
+      </div>
+      <div id="CoinLayout_3">
+        <div>
+          <h1 id="H1Layout">코인시세</h1>
+          <ul id="UlLayout">
+            <li class="LiLayout">
+              <p class="PLayout">
+                <span>비트코인</span>
+                <span>
+                  <span style="color: #d60000;">13,661,000 KRW</span>
+                  <span class="PercentLayout" style="color: #d60000;">+0.66%</span>
+                </span>
+              </p>
+            </li>
+            <li class="LiLayout">
+              <p class="PLayout">
+                <span>이더리움</span>
+                <span>
+                  <span style="color: #0051c7;">528,400 KRW</span>
+                  <span class="PercentLayout" style="color: #0051c7;">-0.42%</span>
+                </span>
+              </p>
+            </li>
+            <li class="LiLayout">
+              <p class="PLayout">
+                <span>리플</span>
+                <span>
+                  <span style="color: #d60000;">328 KRW</span>
+                  <span class="PercentLayout" style="color: #d60000;">+0.89%</span>
+                </span>
+              </p>
+            </li>
+            <li class="LiLayout">
+              <p class="PLayout">
+                <span>체인링크</span>
+                <span>
+                  <span style="color: #0051c7;">17,560 KRW</span>
+                  <span class="PercentLayout" style="color: #0051c7;">-0.42%</span>
+                </span>
+              </p>
+            </li>
+            <li class="LiLayout">
+              <p class="PLayout">
+                <span>비트코인캐시</span>
+                <span>
+                  <span style="color: #d60000;">314,000 KRW</span>
+                  <span class="PercentLayout" style="color: #d60000;">+0.69%</span>
+                </span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div id="AppContainerBox">
+      <div id="AppTopLayout">
+        <h2 style="font-size: 36px;">빠르고 간편한 모바일 앱</h2>
+        <span>코인 정보부터 주문까지 모바일에서도 간편하고 빠른 디지털 자산 거래소를 만나보세요.</span>
+      </div>
+        <div id="AppMiddleLayout">
+          <div><img src="./o.png" width="16px" height="20px" style="padding: 7px;">안드로이드 앱</div>
+          <div><img src="./p.png" width="16px" height="20px" style="padding: 5px;">아이폰 앱</div>
+        </div>
+        <div id="AppBottomLayout">
+          <div id="AppBottomContainerLayout">
+            <div id="AppBottomLayout_1">
+              <button >
+                <img id="Img_a" onclick="onClickImage(0)">
+              </button>
+              <p class="AppTextLayout_1">
+                <span style="font-size: 20px; color: #fff;">지정가 도달 시 푸시 알림</span>  
+                <span style="font-size: 16px; color: #8ea4cb;">차트를 보면서 지정가 알림을 설정<br>빠른 알람 수신</span>
+              </p>
+            </div>
+            <div id="AppBottomLayout_2">
+              <button>
+                <img id="Img_b" onclick="onClickImage(1)">
+              </button>
+              <p class="AppTextLayout_1">
+                <span style="font-size: 20px; color: #fff;">지정가 도달 시 푸시 알림</span>  
+                <span style="font-size: 16px; color: #8ea4cb;">차트를 보면서 지정가 알림을 설정<br>빠른 알람 수신</span>
+              </p>
+            </div>
+            <div id="AppBottomLayout_3">
+              <button>
+                <img id="Img_c" onclick="onClickImage(2)">
+              </button>
+              <p class="AppTextLayout_2">
+                <span style="font-size: 20px; color: #fff;">지정가 도달 시 푸시 알림</span>  
+                <span style="font-size: 16px; color: #8ea4cb;">차트를 보면서 지정가 알림을 설정<br>빠른 알람 수신</span>
+              </p>
+            </div>
+            <div id="AppBottomLayout_4">
+              <button>
+                <img id="Img_d" onclick="onClickImage(3)">
+              </button>
+              <p class="AppTextLayout_2">
+                <span style="font-size: 20px; color: #fff;">지정가 도달 시 푸시 알림</span>  
+                <span style="font-size: 16px; color: #8ea4cb;">차트를 보면서 지정가 알림을 설정<br>빠른 알람 수신</span>
+              </p>
+            </div>
+            <div id="AppPhotoLayout">
+              <div id="AppPhotoImgLayout">
+                <img id="setTimeImage">
+              </div>
+            </div>
+            <div>
+              <img src="https://cdn.upbit.com/images/sliderGalbg.438d71f.png">
+            </div>
+            <div id="AppPhoneImgLayout">
+              <img src="https://cdn.upbit.com/images/mobileFrame.934829f.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--  -->
+    <div id="MiddleContainerBox">
+      <div id="MiddleLayout">
+        <h1>강력한 멀티팩터 인증으로 24시간 안심거래</h1>
+        <p>글로벌 최고 수준의 파트너들과 함께 가장 안전한 보안체계를 구축합니다.</p>
+        <img src="./info02Img.8beee54.png">
+        <div id="MiddleTextLayout">
+          <div id="LeftTextLayout">
+            <p>윌렛보안</p>
+            <span style="color: #999; font-size: 16px;">
+              BitGo 멀티 시그니처 월렛 사용
+              <br>
+              높은 안정성을 기반으로
+              <br>
+              다양한 알트코인 지갑을 안전하게 운영
+            </span>
+          </div>
+          <div id="RightTextLayout">
+            <p>계정보안</p>
+            <span style="color: #999; font-size: 16px;">
+              OTP보다 간편하고 안전한 카카오페이
+              <br>
+              간편인증으로 2채널 추가인증
+              <br>
+              체계적으로 고안된 보안시스템으로 24시간 모니터링
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div id="ConfirmContainerBox">
+      <div id="ConfirmLayout">
+        <h1 style="font-size: 40px;">국제 표준 및 국내 주요 보안 인증 획득</h1>
+        <span style="font-size: 15px; color: #999;">ISMS 및 ISO 인증을 획득한 보안 시스템으로 자산을 안전하게 보호합니다.</span>
+      </div>
+      <div id="ConfirmTextLayout">
+        <div>
+          <div>
+            <p><img src="./IsmsIco01.e6dc32e.png"></p>
+            <span>
+              <h5 style="font-size: 20px;">정보보호관리체계(ISMS)</h5>
+              <p style="color: #999;">
+                기업이 보유하고 있는 중요 정보자산의 관리, 운영 등의
+                <br>
+                종합적인 정보보호 관리체계를 국가로부터 인증받는 제도
+              </p>
+            </span>
+          </div>
+          <div style="margin-left: 5%;">
+            <p>
+              <img class="ImageLayout" src="./IsmsIco_iAS.1e6125b.svg" width="90px" height="110px">
+              <img class="ImageLayout" src="./IsmsIco_GCERTI.7ab2a3f.svg" width="90px" height="110px">
+              <img class="ImageLayout" src="./IsmsIco_GCERTI2.f0996bd.svg" width="90px" height="110px">
+            </p>
+            <span>
+              <h5 style="font-size: 20px;">ISO/IEC 27001, 27017, 27018</h5>
+              <p style="color: #999;">
+                국제표준화기구(ISO) 및 국제전기기술위원회(IEC)가 제정한
+                <br>
+                정보보호 관리체계에 대한 국제 보안 표준 인증
+              </p>
+            </span>
+          </div>xxs
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div id="BottomContainerBox">
+      <div id="BottomLayout">
+        <div id="BottomLayout_1">
+          <h3 style="font-size: 30px;">
+            <img src="./h.png" width="55px" height="50px">
+            업비트 고객센터
+          </h3>
+          <p style="font-size: 35px; margin: 5px;">1588-5682 <span style="font-size: 20px;">(평일 09:00 ~ 18:00)</span>
+          </p>
+          <img src="./k.png" width="230px">
+        </div>
+        <div id="BottomLayout_2">
+          <h3 style="font-size: 30px;">
+            <img src="./i.png" width="55px" height="50px">
+            업비트 라운지
+          </h3>
+          <p style="color: #999;">
+            방문 상담은 업비트라운지를 이용해주십시오.
+            <br>
+            라운지는 회원님을 위한 상담과 교류의 공간입니다.
+          </p>
+          <ul style="color: #999;">
+            <li>운영시간: 평일 09:00~18:00</li>
+            <li>서울특별시 강남구 테헤란로4길 14, 미림타워 2층</li>
+          </ul>
+        </div>
+        <div id="BottomLayout_3">
+          <h3 style="font-size: 30px;">
+            <img src="./j.png" width="55px" height="50px">
+            업비트 앱
+          </h3>
+          <img src="./l.png" width="280px" height="120x">
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div id="InfoContainerBox">
+      <div id="InfoLayout">
+        <div id="AddInfoLayout">
+          <div id="InfoTitle">
+            <h2 style="padding-right: 5%;">UpBit</h2>
+          </div>
+          <div id="InfoTextLayout">
+            <p>
+              <span style="padding: 0 7px; border-right: 1px solid #666;">고객센터</span>
+              <span style="padding: 0 7px; border-right: 1px solid #666;">1588-5682</span>
+              <span style="padding: 0 5px;">서울시 강남구 테헤란로 4길 14, 2층</span>
+            </p>
+            <p style="color: #999">
+              <span style="padding: 0 7px; border-right: 1px solid #999;">두나무 주식회사</span>
+              <span style="padding: 0 7px; border-right: 1px solid #999;">서울시 강남구 테헤란로 4길 14, 5층</span>
+              <span style="padding: 0 7px; border-right: 1px solid #999;">대표 이석우</span>
+              <span style="padding: 0 7px;">사업자등록번호 119-86-54968</span>
+            </p>
+            <p style="color: #999">
+              <span style="padding: 0 7px; border-right: 1px solid #999;">기사 배열책임자 박동규</span>
+              <span style="padding: 0 7px; border-right: 1px solid #999;">청소년 보호 책임자 송세정</span>
+            </p>
+            <img src="./m.png" width="360px">
+          </div>
+        </div>
+        <div id="InfoCompanyLayout">
+          <div id="LeftCompanyTextLayout">
+            <ul>
+              <p style="font-weight: 700;">회사</p>
+              <li>회사 소개</li>
+              <li>공지사항</li>
+              <li>이용약관</li>
+              <li>Open API 이용약관</li>
+              <li style="color: #093687; font-weight: 700;">개인정보처리방침</li>
+            </ul>
+          </div>
+          <div id="RightCompanyTextLayout">
+            <ul>
+              <p style="font-weight: 700;">고객지원</p>
+              <li>자주하는 질문(FAQ)</li>
+              <li>카카오톡 질문(24시간)</li>
+              <li>1:1 문의하기</li>
+              <li>Open API</li>
+              <li>거래 및 입출금 이용안내</li>
+              <li>상장문의 (Listing Inquiry)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./clone.js"></script>
+  <script src="./chart.js"></script>
+ </html>
